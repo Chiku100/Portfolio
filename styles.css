@@ -129,7 +129,9 @@ i {
     position: relative;
     transition: transform 0.3s ease-out;
 }
-
+img:hover {
+    transform: scale(1.16);
+}
 .contact:hover {
     transform:scale(2) ;
 }
