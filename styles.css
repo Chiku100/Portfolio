@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 4rem;
+}
+
+#pro {
+    color: rgb(12, 12, 12) !important;
+    text-align: center;
+    padding-top: 2rem;
+    background-color: white;
+}
+
+h2 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    color: black;
+}
+
+a h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-family: 'Roboto Slab', serif;
+    color: black;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    height: 18rem;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#navbar {
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    padding-right: 10px;
+    background-color: rgb(254, 254, 254);
+}
+
+a {
+    height: 0;
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+}
+
+#navbar ul li {
+    margin: 0;
+    display: flex;
+    padding-top: -20px;
+    justify-content: flex-end;
+    gap: 4rem;
+}
+
+li {
+    list-style: none;
+}
+
+#welcome-section {
+
+    padding: 15rem;
+    margin: auto;
+    height: 100%;
+    text-align: center;
+}
+
+#projects {
+    display: grid;
+    text-align: center;
+    padding: 2rem 5rem;
+    gap: 3rem;
+    place-items: center;
+    background-color: white;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#contacts {
+    text-align: center;
+    padding: 5rem;
+}
+
+i {
+    color: white;
+}
+
+#contacts div a {
+    color: white;
+    padding: 20px;
+    transition: transform 0.3s ease-out;
+}
+
+footer {
+    text-align: center;
+}
+
+.project-tile div {
+    padding: 410px;
+}
+
+footer p {
+    display: inline;
+
+    padding: 10px;
+}
+
+#author:hover {
+    background-color: rgb(187, 160, 107);
+    color: yellow;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        font-size: 2rem;
+    }
+    main{display: grid;
+        margin: auto;
+        width: 100%;
+        max-width: 400px;
+    grid-template-columns: 1fr;}
+    #navbar{height: 6rem;}
+    #navbar ul li {
+        margin: 0;
+        display: flex;
+        padding:0;
+        justify-content: center;
+        gap: 1rem;
+    }
+    #welcome-section {width: 100%;
+        /* padding: 2rem; */
+        min-height: 100%;
+    }#projects {
+        padding: 1rem 2rem;
+        gap: 2rem;
+      
+        grid-template-columns: 1fr;
+    }
+    h1{font-size: 2rem;}
+    p{font-size: 0.8rem;}
+    h3{font-size: 1rem;}
+    #contacts div a {
+        padding: 10px;
+    }
+    span{font-size: 20px;}
+}
